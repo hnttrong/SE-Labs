@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LoginApp/LoginApp.csproj" Id="5fdc2d93-66ff-41c4-9a3f-9d01acaf2996" />
+  <Project Path="StudentManagementApp/StudentManagementApp.csproj" Id="910e47db-62ae-4bc5-bc6b-5a37f579afcd" />
+</Solution>
