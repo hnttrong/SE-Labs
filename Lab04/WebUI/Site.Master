@@ -1,0 +1,30 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebUI.SiteMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%: Page.Title %> - SE Lab 4</title>
+    <link href="Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="brand">SE Lab 4 - Web Forms 3-Tier</div>
+            <nav>
+                <a href="Main.aspx">Home</a>
+                <a href="Customer.aspx">Customers</a>
+                <a href="Product.aspx">Products</a>
+                <a href="Supplier.aspx">Suppliers</a>
+                <a href="Students.aspx">School Management</a>
+                <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+            </nav>
+        </header>
+        <main class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+        <footer>Developed by Hua Nguyen Thanh Trong - 524H0200</footer>
+    </form>
+</body>
+</html>
